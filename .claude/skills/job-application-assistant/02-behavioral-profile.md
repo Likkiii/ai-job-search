@@ -4,51 +4,53 @@ framework_version: 1.0.0
 
 # Behavioral Profile
 
-<!-- SETUP: This file is populated by running /setup -->
-<!-- You can use results from PI, DISC, Myers-Briggs, StrengthsFinder, or a self-assessment -->
+<!-- Self-assessment, synthesized from freeform answers during /setup. No formal instrument (PI/DISC/MBTI) was provided - review and refine as you learn more about yourself in interviews. -->
 
 ## Overview
-[YOUR_NAME]'s behavioral assessment identifies them as a **[PROFILE_TYPE]** pattern. [1-2 SENTENCE_SUMMARY].
+Likhit's self-described working style centers on **ownership-driven, trade-off-conscious engineering** paired with a strong preference for sustainable pace. He thrives on autonomy and meaningful problems but is explicit that quality/focus matters more to him than hours logged.
 
 ## Core Behavioral Drives
 
 | Drive | Level | Meaning |
 |-------|-------|---------|
-| [DRIVE_1] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_2] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_3] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_4] | [LEVEL] | [DESCRIPTION] |
+| Ownership & Autonomy | High | Prefers taking end-to-end responsibility for impactful systems/features over being directed task-by-task |
+| Analytical Rigor | High | Thoroughly understands a problem and weighs trade-offs before choosing the simplest reliable, maintainable, scalable solution |
+| Sustainable Pace | High | Believes a few hours of deep, uninterrupted focus beat stretching the same work across days with context switching; protects personal time |
+| Collaboration & Feedback | High | Communicates openly, actively seeks feedback, enjoys learning from teammates |
 
 ## Strongest Behaviors
-- **[BEHAVIOR_1]:** [DESCRIPTION]
-- **[BEHAVIOR_2]:** [DESCRIPTION]
-- **[BEHAVIOR_3]:** [DESCRIPTION]
+- **Ownership-driven execution:** Owned a real-time multi-tenant platform end-to-end at Exotel, from design through production operation
+- **Trade-off-driven engineering judgment:** Evaluates options methodically and favors the simplest reliable solution over the cleverest one
+- **Protects deep-focus time:** Treats a few hours of uninterrupted focus as higher-value than long, fragmented hours
 
 ## How You Work Best
-- [ENVIRONMENT_PREFERENCE_1]
-- [ENVIRONMENT_PREFERENCE_2]
-- [ENVIRONMENT_PREFERENCE_3]
+- Dynamic, fast-paced environments with genuine ownership and diverse technical challenges
+- Clear priorities that allow blocks of uninterrupted, deep-focus work
+- Teams where on-call is well-structured and shared fairly, not a constant background load
+- Surrounded by strong engineers to learn from, with room to contribute to architectural discussions
 
 ## Growth Areas (frame positively in applications)
-- **[AREA_1]:** [HOW_TO_FRAME_IT_POSITIVELY]
-- **[AREA_2]:** [HOW_TO_FRAME_IT_POSITIVELY]
+- **Operating under shifting priorities:** Likhit does his best work with clearly defined priorities. He is developing the habit of proactively requesting prioritization clarity from managers in ambiguous, fast-shifting environments, rather than defaulting to longer hours to compensate.
 
 ## Mapping to Job Posting Language
 
 When a job posting mentions these keywords, it's a **strong behavioral fit**:
-- [KEYWORD_OR_PHRASE_THAT_MATCHES_YOUR_STYLE]
-- [ANOTHER_KEYWORD]
+- "ownership", "autonomy", "end-to-end"
+- "fast-paced", "scale", "distributed systems"
+- "engineering culture", "mentorship", "architecture"
+- "work-life balance", "sustainable pace"
 
 When a job posting mentions these, flag as **potential friction** (not deal-breaker):
-- [KEYWORD_OR_PHRASE_THAT_MIGHT_CLASH]
-- [ANOTHER_KEYWORD]
+- "always-on", "unlimited hours", "wear many hats" without any mention of prioritization support
+- Heavy on-call expectations with no mention of fair rotation or structure
+- Language implying long hours are the norm rather than the exception
 
 ## Management Style Preferences
-- [WHAT_MANAGEMENT_STYLE_WORKS_FOR_YOU]
-- [WHAT_DOESN'T_WORK]
+- **Works well:** Managers who set clear priorities and direction, then grant autonomy in execution; regular, direct feedback
+- **Doesn't work:** Micromanagement; ambiguous, constantly shifting priorities with no check-in cadence; cultures where long hours are implicitly expected
 
 ## Using This in Applications
-- **Cover letters:** [HOW_TO_WEAVE_IN_BEHAVIORAL_STRENGTHS]
-- **CV:** [WHAT_TO_EMPHASIZE]
-- **Interviews:** [WHAT_STAR_EXAMPLES_TO_USE]
-- **Don't overstate:** [WHAT_NOT_TO_CLAIM]
+- **Cover letters:** Weave in ownership and trade-off-driven reasoning naturally through how a problem was approached, not as a stated trait ("I evaluated three approaches and chose X because...")
+- **CV:** Emphasize ownership language already present in bullets ("designed and owned", "automated", "standardized") rather than adding new adjectives
+- **Interviews:** Lead with the multi-tenant platform and the 100+ tenant DB migration automation as ownership/trade-off STAR examples
+- **Don't overstate:** Don't imply zero willingness to do on-call or extra hours - frame it as "comfortable with fair, well-structured on-call" rather than a blanket refusal

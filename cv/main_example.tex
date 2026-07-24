@@ -1,8 +1,7 @@
-%% Example CV - [YOUR_NAME]
+%% Example CV - Likhit Ajeesh
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
-%% SETUP: Run /setup to populate this with your actual information.
 %% Compile with: lualatex main_example.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
 
@@ -24,18 +23,18 @@
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Likhit Ajeesh - CV},
     pdfpagemode=FullScreen,
 }
 \usepackage[scale=0.80]{geometry}
 \usepackage{import}
 
 % personal data
-\name{[First]}{[Last]}
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\name{Likhit}{Ajeesh}
+\address{Bengaluru, Karnataka, India}{}{}
+\phone[mobile]{+91 7994143044}
+\email{likhitajeesh20@gmail.com}
+\extrainfo{\href{https://www.linkedin.com/in/likhit-ajeesh/}{LinkedIn}, \href{https://github.com/Likkiii}{GitHub}}
 
 \begin{document}
 
@@ -46,7 +45,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Software Engineer with ~2 years of experience building scalable backend systems, distributed platforms, and AI-powered products. Experienced in event-driven architectures and multi-tenant systems, leveraging AI-assisted development workflows to accelerate delivery, improve code quality, and build production-grade solutions.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -56,15 +55,17 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{Backend Engineering}: Java (Spring Boot), Python (FastAPI, Celery), distributed and event-driven architectures
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Distributed Systems \& Databases}: PostgreSQL, MySQL, MongoDB, Redis, Citus, pgvector, Kafka
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{DevOps \& Cloud}: Docker, Kubernetes, Helm, ArgoCD (GitOps), Terraform, Ansible, Jenkins, AWS
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{Observability \& Monitoring}: Prometheus, Grafana, OpenSearch, Elasticsearch, Kibana
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Generative AI \& Analytics}: OpenAI API, LLM integrations, embeddings, sentiment analysis, prompt engineering
+
+\item \textbf{Full-Stack Development}: JavaScript/TypeScript (Next.js, React, Vue.js)
 
 \end{itemize}
 
@@ -77,31 +78,32 @@
 \begin{itemize}
 
 % --- Most Recent Role ---
-\item{\cventry{[YYYY--Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{2024--Present}{Software Engineer I}{Exotel}{Bengaluru, India}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1 - be specific, use numbers where possible]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
-    \item [Achievement or responsibility 4]
+    \item Designed and owned a real-time multi-tenant conversation platform processing millions of daily events, enabling sub-second analytics and event-driven workflows
+    \item Improved intent-routing accuracy by 25\% using embedding-based semantic matching, hierarchical models, and high-throughput LLM pipelines
+    \item Built distributed backend services for event ingestion, enrichment, webhooks, and agent APIs, reducing live-transcript monitoring latency by ~40\%
+    \item Automated database patching and migration tracking across 100+ tenant databases, enabling zero-downtime schema upgrades
+    \item Standardized deployments and infrastructure workflows using Kubernetes, GitOps, and IaC, accelerating release cycles by 3x
 \end{itemize}}}
 
 \vspace{3pt}
 
 % --- Previous Role ---
-\item{\cventry{[YYYY--YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{2024}{Software Engineer Intern}{Exotel}{Bengaluru, India}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
+    \item Developed RCS messaging workflows and chatbot automation solutions for BFSI clients
+    \item Automated internal knowledge-base and support workflows, reducing manual support intervention by ~60\%
+    \item Built analytics dashboards for ticket intelligence and RAG-based customer health monitoring with OpenAI-powered sentiment analysis
 \end{itemize}}}
 
 \vspace{3pt}
 
 % --- Earlier Role ---
-\item{\cventry{[YYYY--YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{2022}{Frontend Developer Intern}{Softinfo Systems Pvt. Ltd.}{Remote}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
+    \item Built a responsive reporting portal using Vue.js and TailwindCSS, adopted by 200+ employees
+    \item Implemented secure authentication, onboarding flows, and dynamic dashboards with Vue Router and Vite
 \end{itemize}}}
 
 \end{itemize}
@@ -114,14 +116,14 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY--YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
+\item{\cventry{2020--2024}{B.Tech in Computer Science \& Engineering}{VIT Vellore}{Vellore, India}{}{\vspace{1pt}
+CGPA: 8.75
 }}
 
 \vspace{3pt}
 
-\item{\cventry{[YYYY--YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
+\item{\cventry{2019--2020}{Grade XII (CBSE), Science Stream}{Indian School Muladha}{Muladha, Oman}{}{\vspace{1pt}
+School Topper -- 96.2\%
 }}
 
 \end{itemize}
@@ -133,27 +135,19 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item [Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).
+\item Malayalam (native), English (fluent), Hindi (fluent).
 \end{itemize}
 
 % ============================================================
-%     PUBLICATIONS (optional)
-% ============================================================
-
-\section{Publications}
-\vspace{1pt}
-\begin{itemize}
-\item [Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
+%     HONORS AND AWARDS
 % ============================================================
 
 \section{Honors and Awards}
 \vspace{1pt}
 \begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item{\textbf{Medallion of Honor} -- Exotel (Q3 FY25-26), for delivering high unit test coverage on multiple microservices.}
+\item{\textbf{National-level Athlete} -- 100m, 200m, 4x100m Relay (2019).}
+\item{\textbf{District-level Athlete} -- Badminton, Football, Kho Kho (2018).}
 \end{itemize}
 
 % ============================================================

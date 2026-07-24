@@ -14,44 +14,54 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 ## Ready-Made STAR Examples
 
-<!-- These are populated by /setup from your actual experience. Below are templates showing the format. -->
+### 1. Real-Time Multi-Tenant Conversation Platform (System ownership & design)
+**S:** Exotel's internal teams needed real-time visibility into conversation events across many tenants, but no platform existed to process and surface that data at scale.
+**T:** Design and own a real-time, multi-tenant conversation platform from scratch.
+**A:** Built event-driven ingestion, enrichment, and processing pipelines handling millions of daily events; designed the architecture for sub-second analytics and scalable communication services across internal teams.
+**R:** Platform now underpins sub-second analytics and event-driven workflows used across multiple internal teams.
+**Use for:** "Tell me about a system you owned end-to-end", "system design experience", "tell me about a time you took ownership"
 
-### 1. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT - what was happening, what was the problem]
-**T:** [YOUR RESPONSIBILITY - what you specifically needed to do]
-**A:** [WHAT YOU DID - specific actions, tools, methods]
-**R:** [OUTCOME - measurable results, adoption, impact]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 2. Intent-Routing Accuracy Improvement (Applied ML/LLM)
+**S:** Automated conversation handling at Exotel had inconsistent intent-routing accuracy, limiting how much traffic could be safely automated.
+**T:** Improve intent-routing accuracy for automated conversation handling at scale.
+**A:** Applied embedding-based semantic matching, hierarchical models, and high-throughput LLM pipelines to the routing logic.
+**R:** Improved intent-routing accuracy by 25%, enhancing automated conversation handling at scale.
+**Use for:** "Tell me about applying ML/AI to a real problem", "a time you improved a system's accuracy/performance with data"
 
-### 2. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 3. Zero-Downtime Database Migration Automation (Reliability & operational efficiency)
+**S:** Schema upgrades across 100+ tenant databases at Exotel were manual, slow, and risky.
+**T:** Automate database patching and migration tracking across all tenant environments.
+**A:** Built tooling to automate patching and track migrations across 100+ tenant databases with zero downtime.
+**R:** Reduced manual migration effort from hours to minutes per environment while enabling zero-downtime schema upgrades.
+**Use for:** "Tell me about improving an operational process", "a time you reduced manual toil", "reliability engineering experience"
 
-### 3. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 4. Primary On-Call for Agent-Routing & CRM Integrations (Incident response)
+**S:** As the primary on-call engineer for agent-routing, call-flow, and CRM integrations, Likhit was responsible for live production traffic.
+**T:** Resolve critical production incidents quickly while maintaining platform reliability.
+**A:** Diagnosed and resolved incidents in live traffic across agent-routing, call-flow, and CRM integration systems.
+**R:** Improved platform reliability, routing stability, and customer experience during his on-call rotations.
+**Use for:** "Tell me about handling a production incident", "working under pressure", "how do you approach debugging in production"
 
-<!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
+### 5. Reverse Coding Portal (Independent project, large-scale user-facing system)
+**S:** ACM-VIT needed an official platform for its flagship event, Reverse Coding, supporting a large number of participants with complex event-day logistics.
+**T:** Build and ship the event platform independently, outside of any employment.
+**A:** Developed FAQs, roulette-based team assignment, and state management for large-scale event-day workflows.
+**R:** Platform supported over 1,800 participants and is still used by the chapter across multiple editions of the event.
+**Use for:** "Tell me about a project you led outside of work", "a time you built something used by many people", "independent initiative"
 
 ## Common Tough Questions
 
-### "Why did you leave [previous company]?"
-> [PREPARE YOUR ANSWER - be honest, forward-looking, no negativity about former employer]
+### "Why did you leave [previous company]?" (currently: Exotel)
+> I'm not leaving because of dissatisfaction with Exotel - I've owned meaningful systems there and grown a lot. I'm looking for a role with greater scope to work on backend/distributed systems at larger scale, alongside a strong engineering culture I can keep learning from long-term.
 
 ### "You don't have [specific skill/experience]."
-> [PREPARE YOUR ANSWER - acknowledge the gap, bridge to adjacent experience, show willingness to learn]
+> Acknowledge the gap directly, then bridge to the closest adjacent thing he has actually shipped (e.g. "I haven't worked with [X] directly, but I built [closest analogous system] which involved similar trade-offs around [Y]") and state willingness to ramp up quickly. Never claim direct experience he doesn't have.
 
 ### "Where do you see yourself in 5 years?"
-> [PREPARE YOUR ANSWER - show ambition aligned with the role's growth path]
+> Growing into a role where I'm owning larger-scope systems or architecture end-to-end, mentoring other engineers, and continuing to deepen my backend and distributed-systems expertise while staying hands-on.
 
 ### "What's your biggest weakness?"
-> [PREPARE YOUR ANSWER - genuine weakness with concrete mitigation strategy]
+> I do my best work with clearly defined priorities. In environments where priorities shift constantly and without warning, I used to try to compensate by putting in longer hours. I've since learned to proactively ask for prioritization clarity from my manager instead, which has made my output more consistent.
 
 ### "Why this company specifically?"
 > Customize per company. Must reference: specific projects, company values, market position, or team structure. Never give a generic answer.

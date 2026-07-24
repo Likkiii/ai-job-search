@@ -44,9 +44,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** Backend engineering (Java/Spring Boot, Python/FastAPI), distributed systems, event-driven architecture, Kubernetes/DevOps/GitOps, cloud infrastructure (AWS), relational and NoSQL databases, LLM/GenAI integration
+**Moderate match areas:** Full-stack/frontend engineering (React, Vue, Next.js), data pipelines, messaging systems (Kafka)
+**Weak match areas:** Formal ML research/model training (as opposed to applying embeddings/LLM APIs), mobile development, roles requiring 5+ years of experience
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for?
@@ -58,9 +58,9 @@ Does work history align with what they're looking for?
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Backend/platform engineering, multi-tenant distributed systems, production on-call and incident response, DevOps/infrastructure automation
+**Moderate:** Full-stack engineering, applied GenAI/LLM product features
+**Entry-level:** Targeting SDE II / mid-level titles with ~2 years of total experience (SDE I -> SDE II transition). Flag postings that hard-require 3+ years - treat as an experience-level gap to note, not a skills mismatch.
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -91,19 +91,19 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Grow as a Software Development Engineer working on products that operate at scale and solve meaningful real-world problems
+- Deepen expertise in backend engineering, distributed systems, and cloud infrastructure while broadening full-stack range
+- Join a strong engineering culture with mentorship, architectural involvement, and room to take ownership of impactful features
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
-- Non-task factors: leadership style, department culture, company values, degree of autonomy
+- Tasks that energize: Owning impactful features end-to-end, distributed systems/scale problems, architecture discussions, learning from strong engineers
+- Tasks that drain: Working without clear priorities, sustained loss of personal time, constant context-switching instead of deep focus blocks
+- Non-task factors: leadership style, department culture, company values, degree of autonomy, whether on-call is fair and well-structured
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: Currently employed (18 LPA base at Exotel), actively but not urgently job hunting; 60-day notice period. Target total comp 22-35 LPA for SDE II-equivalent roles.
+- **Flexibility**: Bengaluru-based; open to hybrid/remote; prefers not to relocate outside the city
+- **Professional development**: Wants mentorship, architectural involvement, and continued technical growth beyond backend into broader full-stack expertise
 
 ### 6. Salary Benchmark (Optional)
 

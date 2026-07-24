@@ -1,0 +1,20 @@
+{
+  "name": "instahyre-cli",
+  "version": "1.0.0",
+  "description": "CLI for searching jobs on Instahyre's public JSON endpoints (India, product/startup focus) — no authentication, zero runtime dependencies. Client-side filtering (see README) since the portal's anonymous feed ignores query/location params.",
+  "type": "module",
+  "main": "src/cli.ts",
+  "bin": {
+    "instahyre-search": "src/cli.ts"
+  },
+  "scripts": {
+    "start": "bun run src/cli.ts",
+    "test": "bun test --timeout 30000",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/bun": "1.3.14"
+  }
+}

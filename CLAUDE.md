@@ -1,10 +1,7 @@
-# Job Application Assistant for [YOUR_NAME]
-
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
+# Job Application Assistant for Likhit Ajeesh
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Likhit Ajeesh, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -16,67 +13,84 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 <!-- This section is auto-populated by /setup. You can also fill it in manually. -->
 
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
-- **Languages:** [YOUR_LANGUAGES]
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
+- **Name:** Likhit Ajeesh
+- **Location:** Bengaluru, Karnataka, India (prefers not to relocate outside Bengaluru; open to hybrid/remote)
+- **Languages:** English (fluent), Hindi (fluent), Malayalam (native)
+- **CV language:** English
 
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Status:** Currently employed (Software Engineer I, Exotel), actively job hunting. 60-day notice period.
+- **LinkedIn headline:** "Software Engineer-1"
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **B.Tech in Computer Science & Engineering** (2020-2024) - VIT Vellore
+  - CGPA: 8.75
+- **Grade XII (CBSE)** (2019-2020) - Indian School Muladha, Oman
+  - School Topper - 96.2% (Science stream)
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Software Engineer I** (Jul 2024 - Present) - **Exotel** (Bengaluru, Karnataka)
+  - Designed and owned a real-time multi-tenant conversation platform processing millions of daily events, enabling sub-second analytics and event-driven workflows
+  - Improved intent-routing accuracy by 25% using embedding-based semantic matching, hierarchical models, and high-throughput LLM pipelines
+  - Built distributed backend services for event ingestion, enrichment, webhooks, and agent APIs, reducing live-transcript monitoring latency by ~40%
+  - Automated database patching and migration tracking across 100+ tenant databases, enabling zero-downtime schema upgrades
+  - Standardized deployments and infrastructure workflows using Kubernetes, GitOps, and IaC, accelerating release cycles 3x
+  - Primary on-call engineer for agent-routing, call-flow, and CRM integrations
+- **Software Engineer Intern** (Jan 2024 - Jul 2024) - **Exotel** (Bengaluru, Karnataka)
+  - Developed RCS messaging workflows and chatbot automation for BFSI clients (loan categorization, customer engagement, follow-up campaigns)
+  - Automated internal knowledge-base and support workflows, reducing manual support intervention by ~60%
+  - Built analytics dashboards for ticket intelligence and RAG-based customer health monitoring, integrating OpenAI-powered sentiment analysis
+- **Frontend Developer Intern** (May 2022 - Jul 2022) - **Softinfo Systems Pvt. Ltd.** (Remote)
+  - Built a responsive reporting portal using Vue.js and TailwindCSS, adopted by 200+ employees
+  - Implemented secure authentication, onboarding flows, and dynamic dashboards using Vue Router and Vite
+
+### Independent Projects
+- **Reverse Coding Portal** (ACM-VIT, 2022) - Official platform for ACM-VIT's flagship event, supporting 1,800+ participants; FAQs, roulette-based assignments, state management for large-scale event workflows. Still used across multiple editions.
+- **ACTA - MoM App** (ACM-VIT, 2021) - Progressive Web App for managing meeting minutes, adopted by 60+ members; authentication, CRUD operations, collaborative workflows. Still actively used.
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** Java (Spring Boot), Python (FastAPI, Celery), distributed systems, event-driven architecture, Kubernetes, Docker, AWS
+- **Secondary:** JavaScript/TypeScript (Next.js, React, Vue), PostgreSQL, MySQL, MongoDB, Redis, Kafka, Citus, pgvector
+- **Domain:** Backend engineering, multi-tenant platforms, GenAI/LLM integration (OpenAI API, embeddings, prompt engineering), DevOps/GitOps (ArgoCD, Terraform, Ansible, Jenkins)
+- **Software:** Git, IntelliJ IDEA, Cursor, Postman, SonarQube, n8n, MCP servers
+- **Observability & Monitoring:** Prometheus, Grafana, OpenSearch, Elasticsearch, Kibana (from on-call responsibilities)
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+None listed.
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+None.
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- Medallion of Honor - Exotel (Q3 FY25-26) - for delivering high unit test coverage on multiple microservices
+- National-level Athlete - 100m, 200m, 4x100m Relay (2019)
+- District-level Athlete - Badminton, Football, Kho Kho (2018)
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+<!-- Self-assessment; no formal instrument (DISC/MBTI/PI) provided -->
+- **Ownership-driven** - Thrives taking end-to-end ownership of impactful, meaningful systems rather than working task-by-task
+- **Trade-off-oriented decision maker** - Understands problems thoroughly, evaluates trade-offs, and chooses the simplest reliable, maintainable, scalable solution
+- **Strengths:** Deep-focus execution, open communication, collaborative problem-solving, comfortable operating in fast-paced/ambiguous technical environments as long as priorities are clear
+- **Growth areas:** Prefers clearly defined priorities to do his best work; developing comfort proactively seeking prioritization clarity in environments where priorities shift often, rather than defaulting to longer hours to compensate
+- **Thrives in:** Dynamic, fast-paced environments with genuine ownership, diverse technical challenges, and a strong engineering culture to learn from; values sustainable pace and protected deep-focus time over long hours as the norm
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Backend engineering, distributed systems, and cloud infrastructure at scale
+- Owning impactful features end-to-end and contributing to architectural discussions
+- Learning from strong engineers and continuously broadening technical range (including full-stack)
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- Product-based tech (SaaS, fintech, AI, dev tools, consumer tech): Google, Microsoft, Amazon, Meta, Apple, Netflix, Uber, Airbnb, Stripe, Datadog, Cloudflare, Snowflake, Confluent, Rippling, Rubrik, Harness, Atlassian, Salesforce, Intuit, Adobe, Nvidia, Palo Alto Networks, Cisco
+- High-growth Indian startups with strong engineering cultures: Razorpay, PhonePe, Swiggy, Zepto, Meesho, BrowserStack, Postman, CRED, Groww
 
 ### Deal-breakers
-<!-- Hard constraints on job search -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- Relocation outside Bengaluru
+- Heavy or unstructured on-call load not fairly shared across the team (well-structured, fairly shared on-call is acceptable; strong preference for none)
+- Culture where long hours are the implicit norm rather than the exception
+
+### Compensation Baseline
+- Current: 18 LPA base (Exotel, Software Engineer I)
+- Target: 22-35 LPA total compensation for SDE II / mid-level roles, depending on package, responsibilities, and equity
+- Note: targeting SDE II-equivalent titles with ~2 years of total experience - flag this experience-level gap during evaluation for roles that hard-require 3+ years
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)
@@ -91,7 +105,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 4. **Verify both documents** (see Verification Checklist below)
 5. Prepare interview talking points based on the role requirements and your strengths
 
-**Important:** When mentioning agentic coding or AI tooling in CVs/cover letters, explicitly reference **Claude Code** by name.
+**Important:** When mentioning agentic coding or AI tooling in CVs/cover letters, explicitly reference **Cursor** by name (the tool actually used at Exotel) rather than Claude Code.
 
 ## Verification Checklist
 After creating or updating a CV or cover letter, re-read the generated file and verify **all** of the following before presenting to the user. Report the results as a pass/fail checklist.

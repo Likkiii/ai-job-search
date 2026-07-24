@@ -1,75 +1,80 @@
 # Search Queries for Job Scraper
 
-<!-- SETUP: Customize these queries based on your skills, target roles, and location -->
-
 ## Installed portal CLIs (primary for `/scrape`)
 
-`/scrape` discovers every portal skill under `.agents/skills/*/SKILL.md` and runs its CLI first. Shipped country-agnostic CLIs include `linkedin-search` and `freehire-search`; Danish demos and any skill you add with `/add-portal` are included the same way. You do **not** need a matching `site:` line below for those CLIs to run.
+`/scrape` discovers every portal skill under `.agents/skills/*/SKILL.md` and runs its CLI first. Of the CLIs shipped with this framework, `linkedin-search` and `freehire-search` are country-agnostic and relevant to this candidate's market (India); `jobbank-search`, `jobdanmark-search`, `jobindex-search`, and `jobnet-search` are Danish-market demos and are not useful here. `instahyre-search` was added via `/add-portal` for India-specific, product/startup-focused coverage (see its `SKILL.md` for an important caveat: it filters client-side since Instahyre's public API ignores query/location params for anonymous requests). Naukri was investigated but declined - its `robots.txt` explicitly disallows Claude/AI-agent user agents from job listing pages.
 
-The `site:` query templates in this file are the **WebSearch fallback** — for portals without a CLI, company career pages, or when a CLI fails.
+The `site:` query templates in this file are the **WebSearch fallback** - for portals without a CLI, company career pages, or when a CLI fails.
 
 ## Search Sites
 
-Primary (your market's job boards - scaffold one with `/add-portal`):
-- **[YOUR_JOB_BOARD]** - your market's largest general job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY]); also covered by `linkedin-search` CLI
-- **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
-- **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
+Primary:
+- **linkedin.com/jobs** - LinkedIn job listings (filter: India / Bengaluru); covered by `linkedin-search` CLI
+- **instahyre.com** - product/startup-focused Indian job board; covered by `instahyre-search` CLI (client-side filtered, see its SKILL.md)
+
+Excluded:
+- **naukri.com** - India's largest general job board, but its `robots.txt` explicitly disallows Claude/AI-agent user agents from job listing pages. Do not `site:` search or fetch this domain with an AI agent. If you want Naukri coverage, check it manually yourself.
 
 Secondary (company career pages via Google):
-- Direct Google searches with `site:` filters for known target companies
+- Direct Google searches with `site:` filters for known target companies (see list below)
 
 ## Query Categories
 
-Queries are grouped by priority. Each query should be combined with your location terms (e.g. your city, region, or metro area) where the site supports it.
+Queries are grouped by priority. Each query should be combined with location terms (Bengaluru / India) where the site supports it.
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
+### Priority 1: Backend / Distributed Systems Engineer (SDE II)
 
-These match your strongest and most desired career direction.
-
-```
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_COUNTRY]
-```
-
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
-
-These match your domain expertise.
+These match Likhit's strongest and most desired career direction.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
+site:linkedin.com/jobs "SDE II" Bengaluru India
+site:linkedin.com/jobs "Backend Engineer" Kubernetes Bengaluru
 ```
+Also run: `instahyre-search search -q "Software Development Engineer II" -l "Bangalore"` and `instahyre-search search -q "Backend Engineer" -l "Bangalore"`
 
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
+### Priority 2: GenAI / LLM-Integration Backend Roles
 
-Adjacent roles you could pivot into.
-
-```
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
-```
-
-### Priority 4: Broader Technical / Consulting
-
-Wider net for general technical roles.
+These match Likhit's applied GenAI/LLM domain expertise.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:linkedin.com/jobs "Platform Engineer" LLM Bengaluru India
+```
+Also run: `instahyre-search search -q "GenAI" -l "Bangalore"` and `instahyre-search search -q "Member of Technical Staff"`
+
+### Priority 3: Full-Stack / Product Engineer (adjacent roles)
+
+Adjacent roles Likhit could pivot into given his full-stack range.
+
+```
+site:linkedin.com/jobs "Product Engineer" Bengaluru India
+```
+Also run: `instahyre-search search -q "Full Stack Engineer" -l "Bangalore"`
+
+### Priority 4: Broader Technical (wider net)
+
+```
+site:linkedin.com/jobs "Software Engineer II" Bengaluru India
+```
+Also run: `instahyre-search search -q "Senior Software Engineer" -l "Bangalore"`
+
+### Target Companies (monitor directly)
+
+Big tech / global product companies: Google, Microsoft, Amazon, Meta, Apple, Netflix, Uber, Airbnb, Stripe, Datadog, Cloudflare, Snowflake, Confluent, Rippling, Rubrik, Harness, Atlassian, Salesforce, Intuit, Adobe, Nvidia, Palo Alto Networks, Cisco
+
+High-growth Indian product companies: Razorpay, PhonePe, Swiggy, Zepto, Meesho, BrowserStack, Postman, CRED, Groww
+
+```
+site:<company-careers-domain> "Software Development Engineer II" Bengaluru
 ```
 
 ## Location Filter
 
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+When evaluating results, verify the job location is compatible with Likhit's constraints (Bengaluru-based, open to hybrid/remote, prefers not to relocate):
+- Bengaluru (any area) - ideal
+- Hybrid roles based in Bengaluru - ideal
+- Fully remote (India-based, no relocation required) - acceptable
+- Remote requiring periodic travel to another city - borderline, flag for discussion
+- On-site roles outside Bengaluru requiring relocation - too far (deal-breaker, exclude)
 
 ## Date Filter
 
@@ -78,4 +83,4 @@ Only include jobs posted within the last 14 days, or with an application deadlin
 ## Adapting Queries
 
 If the user specifies a focus area, select queries from the matching category and also generate 2-3 custom queries for that focus. For example:
-- "/scrape [focus_area]" -> relevant category queries + custom focus-specific queries
+- "/scrape genai" -> Priority 2 queries + custom GenAI-focused queries

@@ -115,12 +115,14 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 
 **Create 2-3 profile statement templates for your main role types:**
 
-<!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For Backend / Distributed Systems roles:**
+> Software Engineer with ~2 years of experience building scalable backend systems and distributed, multi-tenant platforms. Owns a real-time conversation platform at Exotel processing millions of daily events, with production experience in event-driven architecture, Kubernetes-based infrastructure, and database automation across 100+ tenant environments. Combines strong engineering judgment with AI-assisted development workflows to accelerate delivery without sacrificing quality.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For Full-Stack / Platform Engineer roles:**
+> Software Engineer with backend depth (Java/Spring Boot, Python/FastAPI) and full-stack range across React, Vue, and Next.js. Has shipped production systems end-to-end, from distributed backend services and Kubernetes deployments to user-facing dashboards adopted by hundreds of users. Comfortable owning a feature from architecture through on-call operation.
+
+**For GenAI / LLM-integration roles:**
+> Software Engineer with hands-on production experience integrating LLMs into backend systems: embedding-based semantic matching, hierarchical routing models, and high-throughput LLM pipelines that improved intent-routing accuracy by 25% at Exotel. Pairs applied GenAI work with solid distributed-systems fundamentals and AI-assisted engineering workflows (Cursor, MCP servers).
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 
