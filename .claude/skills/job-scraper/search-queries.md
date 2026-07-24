@@ -2,7 +2,7 @@
 
 ## Installed portal CLIs (primary for `/scrape`)
 
-`/scrape` discovers every portal skill under `.agents/skills/*/SKILL.md` and runs its CLI first. Of the CLIs shipped with this framework, `linkedin-search` and `freehire-search` are country-agnostic and relevant to this candidate's market (India); `jobbank-search`, `jobdanmark-search`, `jobindex-search`, and `jobnet-search` are Danish-market demos and are not useful here. `instahyre-search` was added via `/add-portal` for India-specific, product/startup-focused coverage (see its `SKILL.md` for an important caveat: it filters client-side since Instahyre's public API ignores query/location params for anonymous requests). Naukri was investigated but declined - its `robots.txt` explicitly disallows Claude/AI-agent user agents from job listing pages.
+`/scrape` discovers every portal skill under `.agents/skills/*/SKILL.md` and runs its CLI first. Of the CLIs shipped with this framework, `linkedin-search` and `freehire-search` are country-agnostic and relevant to this candidate's market (India); `jobbank-search`, `jobdanmark-search`, `jobindex-search`, and `jobnet-search` are Danish-market demos and are not useful here. `instahyre-search` and `indeed-india-search` were added via `/add-portal` for India-specific coverage. Four other India boards were investigated and rejected - see "Excluded" below for why each one doesn't work.
 
 The `site:` query templates in this file are the **WebSearch fallback** - for portals without a CLI, company career pages, or when a CLI fails.
 
@@ -10,10 +10,14 @@ The `site:` query templates in this file are the **WebSearch fallback** - for po
 
 Primary:
 - **linkedin.com/jobs** - LinkedIn job listings (filter: India / Bengaluru); covered by `linkedin-search` CLI
+- **in.indeed.com** - Indeed India; covered by `indeed-india-search` CLI. Real server-side search/location/date filtering (unlike Instahyre). robots.txt explicitly allows Claude.
 - **instahyre.com** - product/startup-focused Indian job board; covered by `instahyre-search` CLI (client-side filtered, see its SKILL.md)
 
-Excluded:
-- **naukri.com** - India's largest general job board, but its `robots.txt` explicitly disallows Claude/AI-agent user agents from job listing pages. Do not `site:` search or fetch this domain with an AI agent. If you want Naukri coverage, check it manually yourself.
+Excluded (do not `site:` search or fetch these domains with an AI agent):
+- **naukri.com** - `robots.txt` explicitly disallows Claude/AI-agent user agents from job listing pages.
+- **hirist.tech** (formerly hirist.com) - `robots.txt` has no AI restriction, but the site has fingerprint-based bot detection: it silently serves an empty result set to non-browser HTTP clients (verified: identical requests get real data through a real browser but empty data through curl/Bun `fetch()`, with no header combination changing that). Not pursued since matching that fingerprint would mean evading bot detection.
+- **wellfound.com** - serves an explicit DataDome CAPTCHA challenge page to plain HTTP clients. Declined outright.
+- If you want coverage of any of these three, check them manually yourself.
 
 Secondary (company career pages via Google):
 - Direct Google searches with `site:` filters for known target companies (see list below)
@@ -30,7 +34,7 @@ These match Likhit's strongest and most desired career direction.
 site:linkedin.com/jobs "SDE II" Bengaluru India
 site:linkedin.com/jobs "Backend Engineer" Kubernetes Bengaluru
 ```
-Also run: `instahyre-search search -q "Software Development Engineer II" -l "Bangalore"` and `instahyre-search search -q "Backend Engineer" -l "Bangalore"`
+Also run: `indeed-india-search search -q "Software Development Engineer II" -l "Bangalore" --jobage 14`, `indeed-india-search search -q "Backend Engineer" -l "Bangalore" --jobage 14`, `instahyre-search search -q "Software Development Engineer II" -l "Bangalore"`, and `instahyre-search search -q "Backend Engineer" -l "Bangalore"`
 
 ### Priority 2: GenAI / LLM-Integration Backend Roles
 
@@ -39,7 +43,7 @@ These match Likhit's applied GenAI/LLM domain expertise.
 ```
 site:linkedin.com/jobs "Platform Engineer" LLM Bengaluru India
 ```
-Also run: `instahyre-search search -q "GenAI" -l "Bangalore"` and `instahyre-search search -q "Member of Technical Staff"`
+Also run: `indeed-india-search search -q "GenAI backend engineer" -l "Bangalore"`, `instahyre-search search -q "GenAI" -l "Bangalore"`, and `instahyre-search search -q "Member of Technical Staff"`
 
 ### Priority 3: Full-Stack / Product Engineer (adjacent roles)
 
@@ -48,14 +52,14 @@ Adjacent roles Likhit could pivot into given his full-stack range.
 ```
 site:linkedin.com/jobs "Product Engineer" Bengaluru India
 ```
-Also run: `instahyre-search search -q "Full Stack Engineer" -l "Bangalore"`
+Also run: `indeed-india-search search -q "Full Stack Engineer" -l "Bangalore"` and `instahyre-search search -q "Full Stack Engineer" -l "Bangalore"`
 
 ### Priority 4: Broader Technical (wider net)
 
 ```
 site:linkedin.com/jobs "Software Engineer II" Bengaluru India
 ```
-Also run: `instahyre-search search -q "Senior Software Engineer" -l "Bangalore"`
+Also run: `indeed-india-search search -q "Senior Software Engineer" -l "Bangalore"` and `instahyre-search search -q "Senior Software Engineer" -l "Bangalore"`
 
 ### Target Companies (monitor directly)
 
