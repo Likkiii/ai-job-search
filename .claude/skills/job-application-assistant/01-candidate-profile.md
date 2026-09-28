@@ -1,5 +1,5 @@
 ---
-framework_version: 1.0.0
+framework_version: 1.1.1
 ---
 
 # Candidate Profile
@@ -15,6 +15,18 @@ framework_version: 1.0.0
 - **Languages:** English (fluent), Hindi (fluent), Malayalam (native)
 - **Status:** Currently employed (Software Engineer I, Exotel), actively job hunting. 60-day notice period.
 - **Constraints:** Prefers to stay in Bengaluru; open to hybrid or fully remote; would prefer not to relocate outside the city.
+
+### Languages
+<!-- Every language you can work in professionally, with your honest level. Used by the
+Language Gate in 04-job-evaluation.md and by job-scraper/search-queries.md's query-language
+generation. Omit any language you don't actually work in - an undeclared language is treated as
+a hard no, not a gap to smooth over. -->
+
+| Language | Level | Notes |
+|----------|-------|-------|
+| English | Fluent | |
+| Hindi | Fluent | |
+| Malayalam | Native | |
 
 ## Education
 
